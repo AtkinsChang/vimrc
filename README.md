@@ -1,10 +1,6 @@
 Vimrc
 ============
 
-Original Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
-
-Fork form GITHUB  https://github.com/vgod/vimrc.
-
 ONE-STEP INSTALL
 ----------------
 
@@ -30,8 +26,8 @@ MANUALLY INSTALL
 
         ./install-vimrc.sh
 
-3. (Optional, if you want Command-T) Compile the Command-T plugin
-   (You need to have ruby 1.8.7-p358 installed)
+3. (Optional, if you want Command-T, you need to have ruby 1.8.7-p358 installed) Compile the Command-T plugin
+  
         cd .vim/bundle/command-t/ruby/command-t
         ruby extconf.rb
         make
@@ -165,6 +161,10 @@ These Vim Visual Cheat Sheets are released under [Creative Commons Attribution-S
 
 License
 -------
+
+Original Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+
+Fork form GITHUB  https://github.com/vgod/vimrc.
 
 This vimrc project is released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
 
