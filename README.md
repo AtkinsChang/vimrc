@@ -1,19 +1,20 @@
-vgod's vimrc
+Vimrc
 ============
-Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
 
-Fork me on GITHUB  https://github.com/vgod/vimrc.
+Original Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+
+Fork form GITHUB  https://github.com/vgod/vimrc.
 
 ONE-STEP INSTALL
 ----------------
 
 Use curl (for Mac OS X):
 
-     curl -o - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
+     curl -o - https://raw.github.com/AtkinsChang/vimrc/master/auto-install.sh | sh
 
 or wget (for most UNIX platforms):
 
-     wget -O - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
+     wget -O - https://raw.github.com/AtkinsChang/vimrc/master/auto-install.sh | sh
 
 
 MANUALLY INSTALL
@@ -21,7 +22,7 @@ MANUALLY INSTALL
 
 1. Check out from github
 
-        git clone git://github.com/vgod/vimrc.git ~/.vim
+        git clone git://github.com/AtkinsChang/vimrc.git ~/.vim
         cd ~/.vim
         git submodule update --init
 
@@ -30,27 +31,11 @@ MANUALLY INSTALL
         ./install-vimrc.sh
 
 3. (Optional, if you want Command-T) Compile the Command-T plugin
-
+   (You need to have ruby 1.8.7-p358 installed)
         cd .vim/bundle/command-t/ruby/command-t
         ruby extconf.rb
         make
 
-MANUALLY INSTALL ON WINDOWS
----------------------------
-
-1. Check out from github
-
-        cd C:\Program Files\Vim   (or your installed path to Vim)
-        rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
-        git clone git://github.com/vgod/vimrc.git vimfiles
-        git submodule update --init
-
-2. Install vimrc. Add the following line at the end of C:\Program Files\Vim\vimrc.
-
-        source $VIM/vimfiles/vimrc
-
-
-  
 INSTALL & UPGRADE PLUGIN BUNDLES
 --------------------------------
 
@@ -59,6 +44,11 @@ which can be upgraded with `git pull`. For example, to upgrade Command-T
 
      cd ~/.vim/bundle/command-t
      git pull
+
+To upgrade all plugins
+     
+     cd ~/.vim
+     git submodule foreach git pull
 
 To install a new plugin as a git submoudle, type the following commands.
 
@@ -131,10 +121,10 @@ PLUGINS
     `,]` move to the end of the current indentation-delimited block (very useful in Python and CoffeeScript)
     `,[` move to the beginning of the current indentation-delimited block (very useful in Python and CoffeeScript)
 
-* [Zen Coding](https://github.com/mattn/zencoding-vim): expanding abbreviation like zen-coding.
+* [Emmet](https://github.com/mattn/emmet-vim.git): expanding abbreviations similar to emmet.
 
   Useful commands:   
-    `<ctrl-y>,` expand zen-coding abbreviation.
+    `<ctrl-y>,` expand emmet abbreviation.
 
 * [ack.vim](https://github.com/mileszs/ack.vim): run ack (a better grep) from vim, and shows the results in a split window.
 
