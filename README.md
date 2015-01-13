@@ -1,6 +1,6 @@
 Vimrc
 ============
-
+Author: louise
 ONE-STEP INSTALL
 ----------------
 
